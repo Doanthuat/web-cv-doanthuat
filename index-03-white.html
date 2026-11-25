@@ -3622,9 +3622,11 @@
                 }
 
                 // Fetch blogs.json
-                fetch('./assets/data/blogs.json')
+                fetch('./assets/data/blogs.json', { cache: 'no-cache' })
                     .then(function (res) {
                         if (!res.ok) throw new Error('HTTP ' + res.status);
+                        var ct = (res.headers && res.headers.get('content-type')) || '';
+                        if (ct.indexOf('text/html') !== -1) throw new Error('Expected JSON, got HTML');
                         return res.json();
                     })
                     .then(function (data) {

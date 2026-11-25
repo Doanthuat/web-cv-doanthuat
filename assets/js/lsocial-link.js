@@ -1,8 +1,12 @@
 // Script cập nhật link mạng xã hội từ file JSON
-fetch('./social-links.json')
+fetch('./social-links.json', { cache: 'no-cache' })
     .then(response => {
         if (!response.ok) {
             throw new Error('HTTP ' + response.status);
+        }
+        const ct = (response.headers && response.headers.get('content-type')) || '';
+        if (ct.indexOf('text/html') !== -1) {
+            throw new Error('Expected JSON, got HTML');
         }
         return response.json();
     })
