@@ -92,10 +92,11 @@
       document.addEventListener("DOMContentLoaded", function () {
         const overlay = document.querySelector(".background-overlay");
         const closeButton = document.querySelector(".tmp-close-button-audio");
+        if (!overlay) return;
         function checkAndObserve() {
             const videoCard = document.querySelector(".tmp-intro-video-card-wrapper.position-right");
             if (!videoCard) {
-                overlay.classList.remove("active"); 
+                overlay.classList.remove("active");
                 return;
             }
             const observer = new MutationObserver((mutations) => {
@@ -130,7 +131,12 @@
     tmpgradientAnimation : function name(params) {
       var e = document.querySelectorAll(".tmp-gradient-wrapper"),
         t = document.querySelectorAll(".tmp-gradient-animation");
-        gsap.to(e, { scale: 0.6, repeat: -1, duration: 3, yoyo: !0, ease: Linear.easeNone }).play(), gsap.to(t, { repeat: -1, duration: 3, rotation: 360, ease: Linear.easeNone }).play();
+        if (e.length) {
+          gsap.to(e, { scale: 0.6, repeat: -1, duration: 3, yoyo: !0, ease: Linear.easeNone }).play();
+        }
+        if (t.length) {
+          gsap.to(t, { repeat: -1, duration: 3, rotation: 360, ease: Linear.easeNone }).play();
+        }
     },
 
     tmpTiltAnimation: function () {
@@ -602,7 +608,7 @@
     },
 
     fonklsAnimation: function () {
-      let endAnimation = document.getElementsByClassName('.end');
+      let endAnimation = document.getElementsByClassName('end');
       if(endAnimation.length){
         let endTl = gsap.timeline({
           repeat: -1,
@@ -693,95 +699,54 @@
     },
 
     preloaderWithBannerActivation: function () {
-      document.addEventListener("DOMContentLoaded", function () {
-        // Select all title and subtitle elements
-        const heroTitles = document.querySelectorAll(".tmp-title-split");
+      function animateSplitGroup(selector, charFromVars, wordFromVars) {
+        const heroTitles = document.querySelectorAll(selector);
+        if (!heroTitles.length) return;
         const heroSubtitles = document.querySelectorAll(".hero__sub-title");
-      
-        // Loop through each pair of title and subtitle
-        heroTitles.forEach((title, index) => {
-          const subtitle = heroSubtitles[index]; // Match title with subtitle (if in pairs)
-      
-          // Split the text for both title and subtitle
-          const splitTitle = new SplitText(title, { type: "chars" });
-          const splitSubtitle = subtitle
-            ? new SplitText(subtitle, { type: "chars words" })
-            : null;
-      
-          // Create a timeline for each title and subtitle
-          gsap.timeline({
-            scrollTrigger: {
-              trigger: title, // Trigger animation when the current title comes into view
-              start: "top 80%", // Start when the top of the element reaches 80% of the viewport height
-              end: "bottom 60%", // Optional: Define when animation ends
-              toggleActions: "play none none none", // Play only once
-              // markers: true // Uncomment for debugging
-            },
-          })
-            .from(splitTitle.chars, {
-              duration: 0.2,
-              x: -10,
-              autoAlpha: .02,
-              stagger: 0.02,
-            })
-            .from(
-              splitSubtitle ? splitSubtitle.words : [],
-              {
-                duration: 0.8,
-                x: 100,
-                autoAlpha: 0,
-                stagger: 0.01,
-              },
-              "-=1" // Overlap with the previous animation
-            );
-        });
-      });
-      document.addEventListener("DOMContentLoaded", function () {
-        // Select all title and subtitle elements
-        const heroTitles = document.querySelectorAll(".tmp-title-split-2");
-        const heroSubtitles = document.querySelectorAll(".hero__sub-title");
-      
-        // Loop through each pair of title and subtitle
-        heroTitles.forEach((title, index) => {
-          const subtitle = heroSubtitles[index]; // Match title with subtitle (if in pairs)
-      
-          // Split the text for both title and subtitle
-          const splitTitle = new SplitText(title, { type: "chars" });
-          const splitSubtitle = subtitle
-            ? new SplitText(subtitle, { type: "chars words" })
-            : null;
-      
-          // Create a timeline for each title and subtitle
-          gsap.timeline({
-            scrollTrigger: {
-              trigger: title, // Trigger animation when the current title comes into view
-              start: "top 80%", // Start when the top of the element reaches 80% of the viewport height
-              end: "bottom 60%", // Optional: Define when animation ends
-              toggleActions: "play none none none", // Play only once
-              // markers: true // Uncomment for debugging
-            },
-          })
-            .from(splitTitle.chars, {
-              duration: 0.2,
-              x: -10,
-              autoAlpha: .06,
-              stagger: 0.01,
-            })
-            .from(
-              splitSubtitle ? splitSubtitle.words : [],
-              {
-                duration: 0.2,
-                x: 100,
-                autoAlpha: .06,
-                stagger: 0.01,
-              },
-              "-=1" // Overlap with the previous animation
-            );
-        });
-      });
-      
-        
 
+        heroTitles.forEach((title, index) => {
+          const subtitle = heroSubtitles[index];
+          const splitTitle = new SplitText(title, { type: "chars" });
+          const splitSubtitle = subtitle
+            ? new SplitText(subtitle, { type: "chars words" })
+            : null;
+
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: title,
+              start: "top 80%",
+              end: "bottom 60%",
+              toggleActions: "play none none none",
+            },
+          });
+
+          if (splitTitle.chars && splitTitle.chars.length) {
+            tl.from(splitTitle.chars, charFromVars);
+          }
+          if (splitSubtitle && splitSubtitle.words && splitSubtitle.words.length) {
+            tl.from(splitSubtitle.words, wordFromVars, "-=1");
+          }
+        });
+      }
+
+      function initSplitAnimations() {
+        animateSplitGroup(
+          ".tmp-title-split",
+          { duration: 0.2, x: -10, autoAlpha: 0.02, stagger: 0.02 },
+          { duration: 0.8, x: 100, autoAlpha: 0, stagger: 0.01 }
+        );
+        animateSplitGroup(
+          ".tmp-title-split-2",
+          { duration: 0.2, x: -10, autoAlpha: 0.06, stagger: 0.01 },
+          { duration: 0.2, x: 100, autoAlpha: 0.06, stagger: 0.01 }
+        );
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initSplitAnimations);
+      } else {
+        initSplitAnimations();
+      }
     },
 
     animationOnHover: function () {
@@ -895,6 +860,7 @@
         const parent = document.querySelector('.for-animation-inner');
         const line1 = document.querySelector('.cta__line-1');
         const line2 = document.querySelector('.cta__line-2');
+        if (!parent || !line1 || !line2) return;
     
         function animateLines() {
           const parentHeight = parent.offsetWidth;
@@ -987,6 +953,20 @@ document.addEventListener('DOMContentLoaded', function() {
   document.body.classList.add("preloader-active");
   window.addEventListener('load', function() {
     removePreloader();
+  });
+});
+
+$(document).ready(function() {
+  // Fix for Bootstrap tabs hiding tmp-scroll-trigger elements causing blank spaces
+  $('button[data-bs-toggle="tab"]').on('shown.bs.tab', function (e) {
+    var target = $(e.target).attr("data-bs-target");
+    if (target) {
+      $(target).find('.tmp-scroll-trigger').each(function() {
+        if (!$(this).hasClass('tmp-scroll-trigger--offscreen')) {
+          $(this).attr("animation-end", "");
+        }
+      });
+    }
   });
 });
 

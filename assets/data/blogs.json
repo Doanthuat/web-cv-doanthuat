@@ -1,0 +1,233 @@
+[
+  {
+    "id": "toi-uu-ux-ui-seo-website-may-anh-viet-nam",
+    "title": "Hành trình xây dựng Website Máy Ảnh Việt Nam: Khi tốc độ tải trang quyết định đơn hàng",
+    "thumbnail": "./assets/images/latest-portfolio/mavn.png",
+    "author": "Đoàn Văn Như Thuật",
+    "comments": "12",
+    "date": "Ngày 20 tháng 05, 2026",
+    "description": "Chia sẻ thực chiến quá trình thiết kế UI/UX tối giản, tổ chức kiến trúc SASS gọn gàng và tối ưu Technical SEO cho trang thương mại điện tử chuyên ngành thiết bị nhiếp ảnh.",
+    "sections": [
+      {
+        "heading": "Bài toán của trang thương mại điện tử ngành hàng đặc thù",
+        "paragraphs": [
+          "Khi bắt tay vào thực hiện dự án Website Máy Ảnh Việt Nam, bài toán lớn nhất không nằm ở việc nhồi nhét thật nhiều hiệu ứng bắt mắt, mà là làm sao để khách hàng tra cứu thông số kỹ thuật phức tạp của hàng trăm mẫu body máy ảnh và ống kính một cách nhanh nhất.",
+          "Anh em chơi ảnh khi mua đồ thường mở cùng lúc 4-5 tab để so sánh giá và cấu hình. Nếu trang web mất quá 3 giây để tải xong hình ảnh độ phân giải cao, khách sẽ thoát trang ngay. Do đó, triết lý thiết kế được mình chốt ngay từ đầu: Hiện đại, trẻ trung, đưa sản phẩm lên làm nhân vật chính và ưu tiên tốc độ phản hồi tối đa."
+        ]
+      },
+      {
+        "heading": "Tối ưu hóa Frontend với kiến trúc SASS và Vanilla JavaScript",
+        "paragraphs": [
+          "Thay vì phụ thuộc vào các thư viện UI nặng nề, mình chọn cách chia nhỏ cấu trúc giao diện bằng SASS. Cách làm này giúp kiểm soát hoàn toàn dung lượng file CSS đầu ra, đồng thời giúp việc tái sử dụng các component như thẻ sản phẩm, bộ lọc thông số hay bảng giá trở nên cực kỳ linh hoạt.",
+          "Toàn bộ hình ảnh sản phẩm đều được xử lý lazy-load hợp lý. Các thao tác tương tác như xem nhanh ảnh, lọc sản phẩm theo thương hiệu và ngàm ống kính đều được viết bằng JavaScript thuần tối ưu, giúp điểm trải nghiệm trang trên thiết bị di động luôn đạt mức mượt mà."
+        ]
+      },
+      {
+        "heading": "Khi UI/UX đi cùng tư duy SEO bền vững",
+        "paragraphs": [
+          "Một giao diện đẹp nhưng Google không hiểu được cấu trúc thì rất lãng phí ngân sách quảng cáo. Trong dự án này, từng thẻ Heading, cấu trúc dữ liệu Schema cho sản phẩm và đường dẫn thân thiện đều được tính toán kỹ ngay từ bước dựng khung HTML5, tạo nền tảng vững chắc để các từ khóa máy ảnh nhanh chóng bám top tìm kiếm."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hau-truong-phat-trien-youtube-ai-translator-dubber",
+    "title": "Chuyện làm Extension YouTube AI Translator & Dubber: Giải bài toán đồng bộ giọng nói thời gian thực",
+    "thumbnail": "./assets/images/portfolio/YouTube-AI-Translator.png",
+    "author": "Đoàn Văn Như Thuật",
+    "comments": "19",
+    "date": "Ngày 12 tháng 05, 2026",
+    "description": "Góc khuất kỹ thuật đằng sau tiện ích lồng tiếng video YouTube bằng AI: Làm sao để giọng đọc tự nhiên như phim thuyết minh, không bị trễ nhịp và khớp với tốc độ của video gốc?",
+    "sections": [
+      {
+        "heading": "Xuất phát từ nhu cầu tự học qua các video quốc tế",
+        "paragraphs": [
+          "Là một người thường xuyên xem các bài giảng lập trình và tài liệu công nghệ nước ngoài trên YouTube, mình nhận ra việc phải liên tục dán mắt vào dòng phụ đề đôi khi làm giảm sự tập trung vào nội dung chính trên màn hình. Các công cụ đọc phụ đề truyền thống thì giọng cứ đều đều như máy đọc, nghe vài phút là thấy tụt cảm xúc.",
+          "Đó là lý do mình bắt tay vào xây dựng YouTube AI Translator & Dubber — một tiện ích trình duyệt giúp tự động nhận diện lời thoại, dịch và lồng tiếng Việt trực tiếp vào video đang phát theo thời gian thực với ngữ điệu truyền cảm nhất."
+        ]
+      },
+      {
+        "heading": "Thách thức lớn nhất: Khớp tốc độ âm thanh (Audio Sync)",
+        "paragraphs": [
+          "Bản dịch tiếng Việt thường dài hơn câu tiếng Anh gốc khi phát âm. Nếu chỉ đơn thuần đẩy văn bản qua bộ chuyển đổi giọng nói rồi phát lên, âm thanh sẽ ngay lập tức bị chồng chéo hoặc trễ nhịp hẳn so với khẩu hình của người nói trong video.",
+          "Để xử lý triệt để, mình đã viết một thuật toán quản lý hàng đợi âm thanh bằng JavaScript kết hợp tính toán thời lượng của từng đoạn hội thoại. Hệ thống tự động điều chỉnh nhẹ tốc độ giọng AI để khớp với nhịp độ của video gốc, đồng thời tự động giảm nhẹ âm lượng nền khi có tiếng thuyết minh để người nghe cảm nhận rõ từng câu chữ như đang xem một bộ phim được lồng tiếng chuyên nghiệp."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "thiet-ke-phan-mem-quan-ly-studio-ao-cuoi",
+    "title": "Số hóa quy trình vận hành: Bài học từ việc thiết kế Phần mềm Quản lý Studio Áo cưới",
+    "thumbnail": "./assets/images/portfolio/spintx-ql.jpg",
+    "author": "Đoàn Văn Như Thuật",
+    "comments": "07",
+    "date": "Ngày 28 tháng 04, 2026",
+    "description": "Từ những cuốn sổ ghi chép lịch thuê váy dễ nhầm lẫn đến một Dashboard quản lý tập trung: Cách thiết kế UI/UX phần mềm nghiệp vụ để nhân viên nào cũng thao tác được ngay.",
+    "sections": [
+      {
+        "heading": "Nỗi đau của việc quản lý kho đồ và lịch hẹn thủ công",
+        "paragraphs": [
+          "Khác với bán lẻ thông thường — nơi hàng bán đi là xong, bài toán của tiệm áo cưới phức tạp hơn nhiều ở vòng quay sản phẩm: Khách đặt cọc giữ mẫu, ngày lấy váy, ngày trả, thời gian đem đi giặt hấp bảo dưỡng rồi mới nhập lại kho để cho khách tiếp theo thuê.",
+          "Khi khảo sát thực tế, việc quản lý danh sách khách hàng, đơn hàng và tồn kho bằng sổ tay hay bảng tính rời rạc rất dễ dẫn đến cảnh trùng lịch thuê váy vào mùa cao điểm cưới hỏi, hoặc thất thoát các khoản chi phí phát sinh."
+        ]
+      },
+      {
+        "heading": "Gom mọi nghiệp vụ phức tạp về một màn hình trực quan",
+        "paragraphs": [
+          "Khi thiết kế hệ thống quản lý này, mục tiêu của mình không phải là vẽ ra những biểu đồ rối rắm, mà là giúp nhân viên lễ tân tạo đơn và kiểm tra kho nhanh nhất ngay khi đang tư vấn cho cô dâu chú rể. Toàn bộ các phân hệ từ quản lý sản phẩm, đơn hàng, khách hàng, nhân viên cho đến báo cáo doanh thu - chi phí đều được kết nối liền mạch.",
+          "Chỉ cần nhìn vào màn hình tổng quan, chủ studio có thể nắm bắt ngay dòng tiền trong tháng và lịch trình giao nhận đồ trong ngày mà không cần phải hỏi lại từng bộ phận."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "xay-dung-website-dich-vu-spintx-wordpress-seo",
+    "title": "Xây dựng Website dịch vụ SpinTX: Cách biến WordPress thành cỗ máy thu hút khách hàng tự nhiên",
+    "thumbnail": "./assets/images/portfolio/spintx_007.png",
+    "author": "Đoàn Văn Như Thuật",
+    "comments": "09",
+    "date": "Ngày 15 tháng 04, 2026",
+    "description": "Kinh nghiệm tùy biến mã nguồn PHP trên nền tảng WordPress để loại bỏ sự cồng kềnh, đạt tốc độ tải trang tối đa và tối ưu tỷ lệ chuyển đổi cho website cung cấp dịch vụ số.",
+    "sections": [
+      {
+        "heading": "Phá bỏ định kiến WordPress chậm và nặng nề",
+        "paragraphs": [
+          "Nhiều người thường nghĩ website làm bằng WordPress sẽ bị chậm do phụ thuộc vào quá nhiều plugin. Thực tế khi xây dựng nền tảng cho SpinTX (spintx.vn), mình chọn hướng tiếp cận can thiệp sâu vào code PHP và xây dựng giao diện tối ưu vừa đủ với nhu cầu thực tế thay vì cài đặt các công cụ dư thừa.",
+          "Việc kiểm soát chặt chẽ các truy vấn cơ sở dữ liệu và dọn dẹp các đoạn mã không cần thiết ở trang chủ giúp tốc độ tải trang nhanh vượt trội, mang lại cảm giác chuyển trang mượt mà ngay cả trên kết nối mạng di động."
+        ]
+      },
+      {
+        "heading": "Bố cục UI/UX dẫn dắt cảm xúc và hành vi khách hàng",
+        "paragraphs": [
+          "Đối với một website cung cấp dịch vụ công nghệ và giải pháp số như SpinTX, khách hàng cần thấy sự chuyên nghiệp và năng lực thực thi rõ ràng. Hành trình người dùng trên trang được thiết kế theo luồng tâm lý tự nhiên: Nêu đúng vấn đề khách hàng đang gặp phải, đưa ra giải pháp cụ thể, chứng minh bằng các dự án thực tế và đặt nút kêu gọi hành động đúng điểm rơi.",
+          "Sự kết hợp giữa giao diện chỉn chu và nền tảng Technical SEO chuẩn chỉnh ngay từ đầu đã giúp SpinTX thu hút lượng lớn khách hàng tiềm năng hoàn toàn tự nhiên."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "seo-ket-qua-tim-kiem-google-ben-vung",
+    "title": "Làm SEO Google thời đại mới: Không chỉ là lên Top, mà là giữ Top bền vững và ra đơn thật",
+    "thumbnail": "./assets/images/portfolio/seo-tu-khoa.png",
+    "author": "Đoàn Văn Như Thuật",
+    "comments": "15",
+    "date": "Ngày 02 tháng 04, 2026",
+    "description": "Góc nhìn thực tế về cách triển khai chiến lược SEO tổng thể: Từ việc phân tích ý định tìm kiếm (Search Intent) đến tối ưu cấu trúc trang web để tăng trưởng lưu lượng tự nhiên dài hạn.",
+    "sections": [
+      {
+        "heading": "Thuật toán Google thay đổi, tư duy làm SEO cũng phải khác",
+        "paragraphs": [
+          "Qua nhiều dự án đẩy từ khóa lên trang nhất Google, mình nhận ra rằng những thủ thuật đánh lừa công cụ tìm kiếm giờ đây không còn chỗ đứng. Google ngày càng thông minh hơn trong việc đánh giá xem người dùng có thực sự hài lòng khi bấm vào trang web của bạn hay không.",
+          "Do đó, chiến lược SEO mình áp dụng luôn bắt đầu từ việc xây dựng một cấu trúc website khỏe mạnh từ bên trong, phân bổ mạng lưới liên kết nội bộ (Internal Link) chặt chẽ để dẫn dắt cả người đọc lẫn bọ tìm kiếm đi qua từng nhóm chủ đề một cách logic nhất."
+        ]
+      },
+      {
+        "heading": "Tập trung vào từ khóa mang lại giá trị chuyển đổi",
+        "paragraphs": [
+          "Lên top hàng trăm từ khóa mà không có khách gọi điện thì dự án SEO đó vẫn chưa trọn vẹn. Thay vì chỉ chạy theo những từ khóa có lượng tìm kiếm khổng lồ nhưng quá chung chung, mình luôn tư vấn và triển khai sâu vào nhóm từ khóa ngách thể hiện rõ nhu cầu mua hàng.",
+          "Khi lưu lượng truy cập tự nhiên tăng trưởng đúng tệp khách hàng mục tiêu, doanh nghiệp sẽ giảm bớt được sự phụ thuộc vào quảng cáo trả phí và có được nguồn khách hàng ổn định mỗi ngày."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "nghe-thuat-seo-copywriting-cham-dung-tam-ly",
+    "title": "SEO Copywriting thực chiến: Viết sao để Google chấm điểm cao mà khách đọc xong muốn mua hàng?",
+    "thumbnail": "./assets/images/portfolio/conent-seo-03.jpg",
+    "author": "Đoàn Văn Như Thuật",
+    "comments": "11",
+    "date": "Ngày 22 tháng 03, 2026",
+    "description": "Bí quyết cân bằng giữa các tiêu chí kỹ thuật chuẩn SEO, kiểm soát độ độc bản (rà đạo văn) và nghệ thuật dùng ngôn từ để giữ chân người đọc đến dòng cuối cùng.",
+    "sections": [
+      {
+        "heading": "Đừng viết như một cỗ máy nhồi nhét từ khóa",
+        "paragraphs": [
+          "Ai từng tìm kiếm thông tin trên mạng chắc hẳn đều từng gặp những bài viết lặp đi lặp lại một cụm từ khóa một cách vô hồn. Cách viết đó không chỉ làm người đọc khó chịu thoát trang ngay, mà chính Google hiện tại cũng đánh giá thấp những nội dung thiếu chiều sâu như vậy.",
+          "Trong quy trình SEO Copywriting của mình, từ khóa chỉ là chiếc la bàn định hướng chủ đề. Điều cốt lõi nhất là bài viết phải giải quyết triệt để thắc mắc của người đọc ngay từ những đoạn mở đầu, sử dụng ngôn từ tự nhiên, gần gũi và có cấu trúc trình bày thoáng mắt."
+        ]
+      },
+      {
+        "heading": "Sự khắt khe trong việc rà soát đạo văn và tính độc bản",
+        "paragraphs": [
+          "Một bài viết chất lượng đòi hỏi thời gian nghiên cứu kỹ lưỡng về sản phẩm và đối thủ. Trước khi xuất bản lên hệ thống WordPress, mọi nội dung đều được mình kiểm tra chéo qua các công cụ rà đạo văn chuyên sâu để đảm bảo độ độc nhất (Unique Content) gần như tuyệt đối.",
+          "Khi nội dung mang lại giá trị thật và hình ảnh minh họa được đầu tư bài bản, thời gian người dùng ở lại trang (Time on Site) sẽ tăng vọt — và đó chính là tín hiệu mạnh mẽ nhất giúp bài viết trụ vững ở vị trí cao trên bảng xếp hạng."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "toi-uu-chuyen-doi-quang-cao-facebook-google-ads",
+    "title": "Chạy Quảng cáo (Facebook & Google Ads) sao cho không 'đốt tiền'? Bài học từ những chiến dịch thực tế",
+    "thumbnail": "./assets/images/portfolio/fb-ads.png",
+    "author": "Đoàn Văn Như Thuật",
+    "comments": "16",
+    "date": "Ngày 14 tháng 03, 2026",
+    "description": "Kinh nghiệm kết hợp giữa SEM, Social Media Ads và tối ưu trang đích để kéo giảm chi phí trên mỗi lượt nhấp (CPC) và gia tăng tỷ lệ ra đơn thực tế.",
+    "sections": [
+      {
+        "heading": "Hiểu đúng bản chất của từng kênh quảng cáo",
+        "paragraphs": [
+          "Nhiều chủ cửa hàng thường hỏi mình nên chạy Facebook Ads hay Google Ads thì tốt hơn. Thực tế, hai nền tảng này đánh vào hai trạng thái tâm lý hoàn toàn khác nhau: Google Ads giúp bạn đón lõng những khách hàng đang có nhu cầu cấp thiết và chủ động gõ tìm kiếm, trong khi Facebook Ads lại cực kỳ mạnh trong việc khơi gợi nhu cầu thông qua hình ảnh và video bắt mắt.",
+          "Khi triển khai các chiến dịch tiếp thị kỹ thuật số toàn diện, việc phối hợp nhịp nhàng cả hai kênh này giúp thương hiệu vừa thu về đơn hàng ngay lập tức, vừa phủ sóng nhận diện rộng rãi tới tệp khách hàng tiềm năng."
+        ]
+      },
+      {
+        "heading": "Lợi thế khi người chạy Ads hiểu sâu về Web và Kỹ thuật",
+        "paragraphs": [
+          "Chạy quảng cáo không chỉ dừng lại ở việc nạp tiền và chọn độ tuổi, vị trí. Yếu tố quyết định thắng bại nằm ở việc cài đặt mã theo dõi chuyển đổi chuẩn xác và tối ưu hóa trang đích (Landing Page).",
+          "Nhờ nền tảng làm web và SEO sẵn có, mình luôn tinh chỉnh tốc độ trang đích và bố cục bài viết thật mượt trước khi bấm nút chạy chiến dịch. Nhờ vậy, điểm chất lượng quảng cáo luôn đạt mức tối đa, giúp tiết kiệm đáng kể ngân sách cho khách hàng mà hiệu quả mang về vẫn vượt kỳ vọng."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "tu-duy-marketing-designer-thiet-ke-ra-chuyen-doi",
+    "title": "Góc nhìn Marketing Designer: Khi một bức ảnh quảng cáo không chỉ cần đẹp mà phải 'biết bán hàng'",
+    "thumbnail": "./assets/images/portfolio/marketing-designer-05.png",
+    "author": "Đoàn Văn Như Thuật",
+    "comments": "10",
+    "date": "Ngày 08 tháng 03, 2026",
+    "description": "Sự khác biệt giữa thiết kế đồ họa thuần túy và thiết kế phục vụ Marketing: Cách kết hợp bộ công cụ Adobe, Canva và AI để tạo ra những ấn phẩm thu hút thị giác trong 3 giây đầu tiên.",
+    "sections": [
+      {
+        "heading": "3 giây vàng trên bảng tin mạng xã hội",
+        "paragraphs": [
+          "Người dùng mạng xã hội hiện nay lướt ngón tay với tốc độ cực nhanh. Một banner quảng cáo hay ấn phẩm truyền thông dù được trau chuốt kỹ thuật phức tạp đến đâu nhưng không làm nổi bật được thông điệp chính trong 3 giây đầu tiên thì vẫn bị lướt qua như thường.",
+          "Khi đảm nhận vai trò Marketing Designer, mình luôn đặt câu hỏi trước khi mở phần mềm thiết kế: Ai sẽ nhìn thấy bức ảnh này? Đâu là điểm nhấn thị giác (Visual Hierarchy) khiến họ phải dừng lại đọc tiếp?"
+        ]
+      },
+      {
+        "heading": "Kết hợp sức mạnh của Adobe, Canva và công nghệ AI",
+        "paragraphs": [
+          "Trong môi trường digital marketing đòi hỏi tốc độ và số lượng biến thể hình ảnh lớn để thử nghiệm (A/B Testing), việc linh hoạt công cụ là yếu tố sống còn. Mình sử dụng hệ sinh thái Adobe để xử lý các chi tiết đồ họa chuyên sâu, kết hợp cùng AI để mở rộng ý tưởng bối cảnh và dùng Canva để hệ thống hóa các mẫu thiết kế đồng bộ cho toàn chiến dịch.",
+          "Một bộ nhận diện hình ảnh xuyên suốt từ bài đăng fanpage, mẫu quảng cáo cho đến banner trên website chính là sợi dây vô hình tạo nên sự chuyên nghiệp và niềm tin vững chắc trong mắt khách hàng."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "thiet-ke-ui-ux-figma-tu-y-tuong-den-san-pham",
+    "title": "Thiết kế UI/UX với Figma & Framer: Làm sao để bản vẽ không bị 'vênh' khi đưa vào code thực tế?",
+    "thumbnail": "./assets/images/blog/blog-img-8.jpg",
+    "author": "Đoàn Văn Như Thuật",
+    "comments": "08",
+    "date": "Ngày 01 tháng 03, 2026",
+    "description": "Quy trình toàn diện từ việc nghiên cứu hành vi người dùng, dựng khung wireframe, xây dựng Design System trên Figma cho đến khi chuyển giao thành mã nguồn Frontend hoàn chỉnh.",
+    "sections": [
+      {
+        "heading": "Nỗi khổ khi bản thiết kế một đằng, lúc lên web một nẻo",
+        "paragraphs": [
+          "Trong nhiều đội ngũ phát triển sản phẩm, chuyện Designer vẽ ra những giao diện rất bay bổng nhưng khi chuyển sang cho Developer lại không thể code giống 100% hoặc làm chậm tốc độ web là điều xảy ra như cơm bữa.",
+          "Vì bản thân vừa trực tiếp thiết kế UI/UX trên Figma/Framer, vừa là người viết code Frontend, mình hiểu rất rõ giới hạn và quy tắc của trình duyệt. Ngay từ lúc kéo thả các khối giao diện trên Figma, mình đã áp dụng chặt chẽ tư duy Auto Layout — vốn tương đồng hoàn toàn với Flexbox và Grid trong CSS."
+        ]
+      },
+      {
+        "heading": "Xây dựng Design System bài bản ngay từ bước đầu",
+        "paragraphs": [
+          "Thay vì thiết kế rời rạc từng trang màn hình, mình luôn dành thời gian quy chuẩn hóa bảng màu, hệ thống phông chữ (Typography), khoảng cách (Spacing) và các trạng thái nút bấm thành các Component có tính kế thừa cao.",
+          "Cách làm này không chỉ giúp giao diện giữ được sự nhất quán tuyệt đối trên mọi kích thước màn hình từ máy tính bàn đến điện thoại, mà còn rút ngắn một nửa thời gian khi bắt tay vào viết code thực tế, giúp sản phẩm ra mắt thị trường nhanh và chuẩn xác hơn rất nhiều."
+        ]
+      }
+    ]
+  }
+]

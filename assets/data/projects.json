@@ -1,0 +1,195 @@
+[
+  {
+    "id": "mayanhvietnam",
+    "title": "Website Máy ảnh Việt Nam",
+    "thumbnail": "./assets/images/latest-portfolio/mavn.png",
+    "tags": [
+      "HTML5/CSS3",
+      "JavaScript",
+      "UI/UX",
+      "SASS",
+      "Tối ưu SEO"
+    ],
+    "categories": [
+      "all",
+      "frontend",
+      "ui-ux"
+    ],
+    "link": "https://mayanhvietnam.vn",
+    "description": "Trang web thương mại điện tử được yêu cầu thiết kế đơn giản theo chủ đạo giới thiệu & bán sản phẩm máy ảnh, phụ kiện. Thiết kế hiện đại, trẻ trung với UX tối ưu tốc độ cho người dùng.",
+    "images": [
+      "./assets/images/portfolio/mavn01.png",
+      "./assets/images/portfolio/mavn02.png",
+      "./assets/images/portfolio/mavn03.png",
+      "./assets/images/portfolio/mavn04.png",
+      "./assets/images/portfolio/mavn05.png",
+      "./assets/images/portfolio/mavn06.png",
+      "./assets/images/portfolio/mavn07.png",
+      "./assets/images/portfolio/mavn08.png",
+      "./assets/images/portfolio/mavn09.png"
+    ]
+  },
+  {
+    "id": "spintx",
+    "title": "Website SpinTX (Dịch vụ)",
+    "thumbnail": "./assets/images/portfolio/spintx_007.png",
+    "tags": [
+      "PHP",
+      "WordPress",
+      "SEO",
+      "UI/UX"
+    ],
+    "categories": [
+      "all",
+      "wordpress",
+      "marketing",
+      "ui-ux"
+    ],
+    "link": "https://spintx.vn",
+    "description": "Website dịch vụ xây dựng trên WordPress, tập trung tối ưu SEO và UI/UX để thu hút khách hàng tiềm năng. Giao diện chuyên nghiệp, tốc độ tải trang nhanh.",
+    "images": [
+      "./assets/images/portfolio/spintx_007.png",
+      "./assets/images/portfolio/spintx_001.png",
+      "./assets/images/portfolio/spintx_002.png",
+      "./assets/images/portfolio/spintx_003.png",
+      "./assets/images/portfolio/spintx_004.png",
+      "./assets/images/portfolio/spintx_005.png",
+      "./assets/images/portfolio/spintx_006.png"
+    ]
+  },
+  {
+    "id": "dashboard-design",
+    "title": "Phần mềm quản lý áo cưới",
+    "thumbnail": "./assets/images/portfolio/spintx-ql.jpg",
+    "tags": [
+      "Adobe",
+      "Webflow"
+    ],
+    "categories": [
+      "all",
+      "ui-ux",
+      "frontend"
+    ],
+    "link": "",
+    "description": "Phần mềm quản lý áo cưới, quản lý danh sách khách hàng, quản lý đơn hàng, quản lý sản phẩm, quản lý danh thu, quản lý chi phí, quản lý kho hàng, quản lý nhân viên, quản lý khách hàng, quản lý đơn hàng, quản lý sản phẩm, quản lý danh thu, quản lý chi phí, quản lý kho hàng, quản lý nhân viên,",
+    "images": [
+      "./assets/images/portfolio/spintx-ql.jpg",
+      "./assets/images/portfolio/spintx-ql01.jpg"
+    ]
+  },
+  {
+    "id": "ai-dich",
+    "title": "  & Dubber (Lồng tiếng và Phụ đề)",
+    "thumbnail": "./assets/images/portfolio/YouTube-AI-Translator.png",
+    "tags": [
+      "HTML5/CSS3",
+      "JavaScript",
+      "Ai"
+    ],
+    "categories": [
+      "all",
+      "wordpress",
+      "marketing"
+    ],
+    "link": "",
+    "description": "Đây là tiện ích trình duyệt thông minh, ứng dụng công nghệ Trí Tuệ Nhân Tạo (AI) tiên tiến để tự động dịch và lồng tiếng mọi video trên YouTube — theo thời gian thực, nhanh chóng, chính xác và tự nhiên đến mức bạn sẽ quên mất mình đang xem một video nước ngoài. Lồng Tiếng AI Thời Gian Thực — Nghe Như Phim Có Bản Dịch Chuyên Nghiệp Tính năng AI Dubbing của tiện ích sẽ tự động nhận diện lời thoại trong video và chuyển đổi thành giọng thuyết minh AI hoàn toàn tự nhiên, truyền cảm — không còn cái cảm giác nghe máy đọc cứng đờ nữa. Giọng AI được tối ưu để khớp với tốc độ nói của video gốc, đảm bảo bạn không bị lệch âm thanh hay mất nhịp theo dõi nội dung.",
+    "images": [
+      "./assets/images/portfolio/YouTube-AI-Translator.png",
+      "./assets/images/portfolio/YouTube-AI-Translator-01.png"
+    ]
+  },
+  {
+    "id": "content-marketing",
+    "title": "SEO Copywriting (Viết bài chuẩn SEO)",
+    "thumbnail": "./assets/images/portfolio/conent-seo-03.jpg",
+    "tags": [
+      "Figma",
+      "Framer",
+      "WordPress"
+    ],
+    "categories": [
+      "all",
+      "wordpress",
+      "marketing"
+    ],
+    "link": "",
+    "description": "Viết bài chuẩn SEO, rà đạo văn",
+    "images": [
+      "./assets/images/portfolio/conent-seo-05.jpg",
+      "./assets/images/portfolio/conent-seo.jpg",
+      "./assets/images/portfolio/conent-seo-01.jpg",
+      "./assets/images/portfolio/conent-seo-02.jpg",
+      "./assets/images/portfolio/conent-seo-03.jpg"
+    ]
+  },
+  {
+    "id": "digital-marketing",
+    "title": "Tiếp thị Kỹ thuật số (Chạy quảng cáo ADS)",
+    "thumbnail": "./assets/images/portfolio/fb-ads.png",
+    "tags": [
+      "ADS"
+    ],
+    "categories": [
+      "all",
+      "marketing"
+    ],
+    "link": "",
+    "description": "Chiến dịch digital marketing toàn diện: SEO, SEM, Social Media Ads. Giúp tăng trưởng lưu lượng hữu cơ và tối ưu chi phí quảng cáo.",
+    "images": [
+      "./assets/images/portfolio/fb-ads.png",
+      "./assets/images/portfolio/google-ads-01.png",
+      "./assets/images/portfolio/fb-ads-01.png",
+      "./assets/images/portfolio/google-ads.png"
+    ]
+  },
+  {
+    "id": "seo-marketing",
+    "title": "SEO kết quả tìm kiếm Google",
+    "thumbnail": "./assets/images/portfolio/seo-tu-khoa.png",
+    "tags": [
+      "SEO"
+    ],
+    "categories": [
+      "all",
+      "marketing"
+    ],
+    "link": "",
+    "description": "Tối ưu SEO toàn diện và triển khai chiến lược digital marketing tích hợp, tăng thứ hạng tìm kiếm và lưu lượng truy cập tự nhiên bền vững.",
+    "images": [
+      "./assets/images/portfolio/seo-tu-khoa.png",
+      "./assets/images/portfolio/seo-tu-khoa-01.png",
+      "./assets/images/portfolio/seo-tu-khoa-02.png",
+      "./assets/images/portfolio/seo-tu-khoa-03.png",
+      "./assets/images/portfolio/seo-tu-khoa-04.png",
+      "./assets/images/portfolio/seo-tu-khoa-05.png",
+      "./assets/images/portfolio/seo-tu-khoa-06.png",
+      "./assets/images/portfolio/seo-tu-khoa-07.png",
+      "./assets/images/portfolio/seo-tu-khoa-08.png"
+    ]
+  },
+  {
+    "id": "marketing-designer",
+    "title": "Marketing Designer",
+    "thumbnail": "./assets/images/portfolio/marketing-designer-05.png",
+    "tags": [
+      "Adobe",
+      "Canva",
+      "Ai"
+    ],
+    "categories": [
+      "all",
+      "marketing"
+    ],
+    "link": "",
+    "description": "Tối ưu SEO toàn diện và triển khai chiến lược digital marketing tích hợp, tăng thứ hạng tìm kiếm và lưu lượng truy cập tự nhiên bền vững.",
+    "images": [
+      "./assets/images/portfolio/marketing-designer-05.png",
+      "./assets/images/portfolio/marketing-designer-04.png",
+      "./assets/images/portfolio/marketing-designer.png",
+      "./assets/images/portfolio/marketing-designer-01.png",
+      "./assets/images/portfolio/marketing-designer-02.png",
+      "./assets/images/portfolio/marketing-designer-03.png",
+      "./assets/images/portfolio/marketing-designer-06.png"
+    ]
+  }
+]

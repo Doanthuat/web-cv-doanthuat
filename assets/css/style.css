@@ -30058,4 +30058,17 @@ body.tmp-white-version.color-primary-3rd .services-widget.v2 .active-bg {
 .active-light.demo-modal-area .wrapper .tmp-modal-inner .demo-top .subtitle {
   color: #3d3d3d !important;
 }
+
+/* Fix: Make the side fade overlay images cover the entire text block height */
+.text-para-doc-wrap .left-bg-text-para,
+.text-para-doc-wrap .right-bg-text-para {
+  height: 100%;
+}
+.text-para-doc-wrap .left-bg-text-para img,
+.text-para-doc-wrap .right-bg-text-para img {
+  height: 100%;
+  object-fit: fill;
+}
+
 /*# sourceMappingURL=../maps/style.css.map */
+
